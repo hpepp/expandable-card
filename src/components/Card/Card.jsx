@@ -8,7 +8,13 @@ function Card() {
 
   return (
       <div className="card" onClick={() => setIsOpen(!isOpen)}>
-        <h2 className='title'>Card Title</h2>
+        <div className="header">
+          <h2 className='title'>Card Title</h2>
+          {isOpen ? 
+            <img src="src/assets/chevron-up-solid.svg" className="icon"/>
+            : <img src="src/assets/chevron-down-solid.svg" className="icon"/>
+          }
+        </div>
         <div className={`items${isOpen ? '--open' : ''}`}>
           <ul className="item-list">
             {ITEMS.map(({id, itemName}) => 

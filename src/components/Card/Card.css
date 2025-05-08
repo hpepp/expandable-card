@@ -1,0 +1,38 @@
+.card {
+    width: 300px;
+    background-color: rgb(232, 179, 244);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.title {
+    padding: 20px;
+    margin: 0;
+}
+
+.items {
+    display: none;
+}
+
+.items--open {
+    padding: 20px 0;
+    display: block;
+    background-color: rgb(241, 227, 244);
+    border-radius: 0 0 20px 20px;
+}
+
+.item-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.item {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(232, 179, 244);
+}
+
+.item:last-child {
+    border: none;
+}
